@@ -1,0 +1,32 @@
+
+
+# Create a Local Git Rep #
+git init repo_name
+
+# Link remote repo #
+cd into local repo
+git remote add origin https://github.com/DLocarno/repo_name.git
+
+# Remove remote link #
+git remote remove origin
+
+# Adding a new file #
+touch file_name
+git add file_name
+git commit -m "added file"
+
+# Pushing Changes #
+git push origin master
+
+# Relinking local repo to most up-to-date branch #
+git pull --rebase origin master
+
+# Update current branch from remote and merge changes #
+git pull
+
+# Update only current branch, but, don't merge changes #
+git fetch
+
+# Update all branches to track remote ones, but, do not merge changes #
+git remote update
+
